@@ -6,10 +6,10 @@ class Solution:
 	    high=len(palin)-1
 	    while(low<high):
 	        if(palin[low]!=palin[high]):
-	            return 0
-	            break
+	             return 0
+	             break
 	        else:
-	            low+=1
-	            high-=1
+	             low+=1
+	             high-=1
 	    
 	    return 1
