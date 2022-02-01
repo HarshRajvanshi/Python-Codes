@@ -1,0 +1,10 @@
+#https://practice.geeksforgeeks.org/problems/count-the-zeros2550/1/?category[]=Arrays&category[]=Strings&category[]=Stack&category[]=Sorting&category[]=python-dict&category[]=Arrays&category[]=Strings&category[]=Stack&category[]=Sorting&category[]=python-dict&difficulty[]=0&page=1&query=category[]Arrayscategory[]Stringscategory[]Stackcategory[]Sortingcategory[]python-dictdifficulty[]0page1category[]Arrayscategory[]Stringscategory[]Stackcategory[]Sortingcategory[]python-dict
+class Solution:
+    def countZeroes(self, arr, n):
+        count=0
+        for i in range(n-1,-1,-1):
+            if(arr[i]==0):
+                count+=1
+            else:
+                break
+        return count
