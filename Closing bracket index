@@ -1,0 +1,11 @@
+#https://practice.geeksforgeeks.org/problems/closing-bracket-index5900/1/?category[]=Arrays&category[]=Strings&category[]=Stack&category[]=Sorting&category[]=python-dict&category[]=Arrays&category[]=Strings&category[]=Stack&category[]=Sorting&category[]=python-dict&difficulty[]=0&page=1&query=category[]Arrayscategory[]Stringscategory[]Stackcategory[]Sortingcategory[]python-dictdifficulty[]0page1category[]Arrayscategory[]Stringscategory[]Stackcategory[]Sortingcategory[]python-dict#
+class Solution:
+    def closing (self,s, pos):
+        count=1
+        for i in range(pos+1,len(s)):
+           if(s[i]=="["):
+               count+=1
+           elif(s[i]=="]"):
+               count-=1
+               if(count==0):
+                   return i
