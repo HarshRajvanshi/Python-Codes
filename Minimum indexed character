@@ -1,0 +1,12 @@
+#https://practice.geeksforgeeks.org/problems/minimum-indexed-character0221/1/?category[]=Arrays&category[]=Strings&category[]=Stack&category[]=Sorting&category[]=python-dict&category[]=Arrays&category[]=Strings&category[]=Stack&category[]=Sorting&category[]=python-dict&difficulty[]=0&page=1&query=category[]Arrayscategory[]Stringscategory[]Stackcategory[]Sortingcategory[]python-dictdifficulty[]0page1category[]Arrayscategory[]Stringscategory[]Stackcategory[]Sortingcategory[]python-dict#
+class Solution:
+    def printMinIndexChar(self, S, patt):
+        lis=[]
+        for i in patt:
+            if i in S:
+                lis.append(S.index(i))
+        if(len(lis)>0):
+            a=min(lis)
+            return(S[a]) 
+        else:
+            return("$")
