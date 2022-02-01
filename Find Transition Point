@@ -1,0 +1,6 @@
+#https://practice.geeksforgeeks.org/problems/find-transition-point-1587115620/1/?category[]=Arrays&category[]=Strings&category[]=Stack&category[]=Sorting&category[]=python-dict&category[]=Arrays&category[]=Strings&category[]=Stack&category[]=Sorting&category[]=python-dict&difficulty[]=0&page=1&query=category[]Arrayscategory[]Stringscategory[]Stackcategory[]Sortingcategory[]python-dictdifficulty[]0page1category[]Arrayscategory[]Stringscategory[]Stackcategory[]Sortingcategory[]python-dict#
+def transitionPoint(arr, n):
+    if 1 in arr:
+        return arr.index(1)
+    else:
+        return -1
