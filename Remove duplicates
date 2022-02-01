@@ -3,8 +3,8 @@ class Solution:
 	def removeDups(self, S):
 	    arr=[]
 	    for i in range(len(S)):
-	        if s[i] not in arr:
-	            arr.append(s[i])
+	         if s[i] not in arr:
+	             arr.append(s[i])
 	    #print(arr)
 	    return("".join(arr))  #to remove brackets 
 		# code here
