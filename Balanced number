@@ -1,0 +1,17 @@
+#https://practice.geeksforgeeks.org/problems/check-if-the-number-is-balanced3014/1/?category[]=Arrays&category[]=Strings&category[]=Stack&category[]=Sorting&category[]=python-dict&category[]=Arrays&category[]=Strings&category[]=Stack&category[]=Sorting&category[]=python-dict&difficulty[]=0&page=1&query=category[]Arrayscategory[]Stringscategory[]Stackcategory[]Sortingcategory[]python-dictdifficulty[]0page1category[]Arrayscategory[]Stringscategory[]Stackcategory[]Sortingcategory[]python-dict#
+class Solution:
+	def balancedNumber(self, N):
+	    left=0
+	    right=len(N)-1
+	    mid=len(N)//2
+	    sumL=0
+	    sumR=0
+	    while(left<mid and right>mid):
+	        sumL+=int(N[left])
+	        sumR+=int(N[right])
+	        left+=1
+	        right-=1
+	    if(sumL==sumR):
+	        return 1
+	    else:
+	        return 0
