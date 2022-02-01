@@ -1,0 +1,8 @@
+#https://practice.geeksforgeeks.org/problems/common-subsequence-oldp3752/1/?category[]=Arrays&category[]=Strings&category[]=Stack&category[]=Sorting&category[]=python-dict&category[]=Arrays&category[]=Strings&category[]=Stack&category[]=Sorting&category[]=python-dict&difficulty[]=0&page=1&query=category[]Arrayscategory[]Stringscategory[]Stackcategory[]Sortingcategory[]python-dictdifficulty[]0page1category[]Arrayscategory[]Stringscategory[]Stackcategory[]Sortingcategory[]python-dict#
+class Solution:
+    def commonSubseq (ob, S1, S2):
+        for i in S1:
+            if i in S2:
+                return 1
+                break
+        return 0
