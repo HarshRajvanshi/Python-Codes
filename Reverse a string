@@ -2,6 +2,6 @@
 def reverse(S):
     rev=""
     for i in range(len(S)-1,-1,-1):
-        rev+=S[i]
+         rev+=S[i]
     S=rev
     return(S)
