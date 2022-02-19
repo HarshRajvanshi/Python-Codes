@@ -1,0 +1,16 @@
+class Human:                                  #parent class
+    
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+    def showw(self):
+        print(self.name)
+        print(self.age)
+        
+class Boy(Human):                              #child class
+    def show(self):
+        print("hi")
+
+
+harsh=Boy("harsh",22)
+harsh.showw()
