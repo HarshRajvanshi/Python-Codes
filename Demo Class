@@ -1,0 +1,28 @@
+#commented code is getter and setter
+#used constructor
+
+class Demo:
+    
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+    def show(self):
+        print(self.name)
+        print(self.age)
+        
+    
+    '''def setNum(self,num):
+        self.num=num
+    def getNum(self):
+        return self.num
+    def call(self):
+        print("calling")
+    def ring(self):
+        print("ringing")'''
+        
+#samsung=Phone()
+#samsung.setNum("harsh")
+#print(samsung.getNum())
+
+student=Demo("harsh",22)   # using constructor to avoid using setter repeatedly 
+student.show()      # calling the getter method
